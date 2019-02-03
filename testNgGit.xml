@@ -1,0 +1,12 @@
+ <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="SampleSuite">
+
+    <test name="SampleTest">
+        <classes>
+           <class name="testGitPack.TestGitClass" />
+           <class name="testGitPack.TestGitClass2" />
+        </classes>
+    </test>
+    
+</suite>
+
