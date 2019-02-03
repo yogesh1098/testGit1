@@ -5,6 +5,7 @@
         <classes>
            <class name="testGitPack.TestGitClass" />
            <class name="testGitPack.TestGitClass2" />
+           <class name="testGitPack.TestGitClass3" />
         </classes>
     </test>
     

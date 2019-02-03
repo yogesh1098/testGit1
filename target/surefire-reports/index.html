@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods,   2 passed</span>
+                    <span class="method-stats">3 methods,   3 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -102,12 +102,17 @@
                     <div class="method-list-content passed suite-SampleSuite">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-SampleSuite" title="testGitPack.TestGitClass2" hash-for-method="testMethod">testMethod</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-SampleSuite" title="testGitPack.TestGitClass" hash-for-method="testMethod">testMethod</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-SampleSuite" title="testGitPack.TestGitClass" hash-for-method="testMethod">testMethod</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-SampleSuite" title="testGitPack.TestGitClass3" hash-for-method="testMethod">testMethod</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-SampleSuite" title="testGitPack.TestGitClass2" hash-for-method="testMethod">testMethod</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-SampleSuite -->
@@ -122,6 +127,21 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-SampleSuite" class="panel SampleSuite">
+          <div class="suite-SampleSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testGitPack.TestGitClass3</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testMethod">
+                  </a> <!-- testMethod -->
+                  <span class="method-name">testMethod</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-SampleSuite-class-passed -->
           <div class="suite-SampleSuite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -166,6 +186,7 @@
     &lt;classes&gt;
       &lt;class name=&quot;testGitPack.TestGitClass&quot;/&gt;
       &lt;class name=&quot;testGitPack.TestGitClass2&quot;/&gt;
+      &lt;class name=&quot;testGitPack.TestGitClass3&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- SampleTest --&gt;
 &lt;/suite&gt; &lt;!-- SampleSuite --&gt;
@@ -179,7 +200,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">SampleTest (2 classes)</span>
+                <span class="test-name">SampleTest (3 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -205,15 +226,19 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(3);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'testMethod')
 data.setCell(0, 2, 'testGitPack.TestGitClass')
 data.setCell(0, 3, 6);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'testMethod')
-data.setCell(1, 2, 'testGitPack.TestGitClass2')
+data.setCell(1, 2, 'testGitPack.TestGitClass3')
 data.setCell(1, 3, 0);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'testMethod')
+data.setCell(2, 2, 'testGitPack.TestGitClass2')
+data.setCell(2, 3, 0);
 window.suiteTableData['SampleSuite']= { tableData: data, tableDiv: 'times-div-SampleSuite'}
 return data;
 }
@@ -252,6 +277,13 @@ return data;
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testGitPack.TestGitClass2</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">testMethod</span>
+                <span class="method-start">7 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testGitPack.TestGitClass3</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">testMethod</span>
                 <span class="method-start">8 ms</span>
